@@ -147,7 +147,7 @@ export default function NavBar() {
         <div className="absolute top-4 right-4 text-4xl" onClick={toggleNav}>
           X
         </div>
-        <div className="flex top-4 gap-10 items-center  flex-col gap-y-4  font-bold text-2xl">
+        <div className="flex top-4 gap-10   flex-col gap-y-4  font-bold text-2xl">
           <NavLink
             to={"/"}
             className={({ isActive }) =>
