@@ -1,5 +1,5 @@
 import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
- 
+
 const Page = ({ blok }) => (
   <main {...storyblokEditable(blok)}>
     {blok.body
@@ -9,5 +9,5 @@ const Page = ({ blok }) => (
       : null}
   </main>
 );
- 
+
 export default Page;

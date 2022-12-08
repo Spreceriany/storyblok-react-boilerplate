@@ -1,9 +1,10 @@
 import { storyblokEditable } from "@storyblok/react";
 
-const Feature = ({ blok }) => (
-  <div {...storyblokEditable(blok)} className="column feature">
-    {blok.name}
-  </div>
-);
-
-export default Feature;
+export default function Feature({ blok }) {
+  return (
+    <div {...storyblokEditable(blok)} className="column feature">
+      <img src={blok.image?.filename} />
+      {blok.name}
+    </div>
+  );
+}
