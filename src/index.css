@@ -104,5 +104,9 @@ body {
   @apply opacity-100 translate-y-0;
 }
 
+.velkyText{
+  @apply text-3xl md:text-5xl;
+}
+
 
 

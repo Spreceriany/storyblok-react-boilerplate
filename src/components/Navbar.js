@@ -59,7 +59,7 @@ export default function NavBar() {
             </div>
           </NavLink>
           <NavLink
-            to={"/page"}
+            to={"/about"}
             className={({ isActive }) =>
               isActive
                 ? " h-8 md:h-12 active transition-all w-full  flex  justify-start items-center relative overflow-hidden  rounded-full hover:bg-cyan"
@@ -85,7 +85,7 @@ export default function NavBar() {
             </div>
           </NavLink>
           <NavLink
-            to={"/about"}
+            to={"/contact"}
             className={({ isActive }) =>
               isActive
                 ? " h-8 md:h-12 active transition-all w-full  flex  justify-start items-center relative overflow-hidden  rounded-full hover:bg-cyan"
@@ -175,7 +175,7 @@ export default function NavBar() {
             </div>
           </NavLink>
           <NavLink
-            to={"/page"}
+            to={"/about"}
             className={({ isActive }) =>
               isActive
                 ? " h-12 active transition-all  w-3/5 flex  justify-start items-center relative overflow-hidden  rounded-full hover:bg-cyan"
@@ -201,7 +201,7 @@ export default function NavBar() {
             </div>
           </NavLink>
           <NavLink
-            to={"/about"}
+            to={"/contact"}
             className={({ isActive }) =>
               isActive
                 ? " h-12 active transition-all  w-3/5 flex  justify-start items-center relative overflow-hidden  rounded-full hover:bg-cyan"

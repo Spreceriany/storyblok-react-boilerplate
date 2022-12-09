@@ -14,6 +14,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import imageCard from "./components/imageCard";
+import twoColumns from "./components/TwoColumns";
+import Contact from "./pages/Contact";
+import Price from "./components/Price";
 
 storyblokInit({
   accessToken: "4l8TQSdiWVrDyJ78aegKAQtt",
@@ -24,9 +27,12 @@ storyblokInit({
     grid: Grid,
     feature: Feature,
     home: Home,
-    about: About,
+    About: About,
     gallery: Gallery,
     imageCard: imageCard,
+    twoColumns: twoColumns,
+    Contact: Contact,
+    price: Price,
   },
 });
 

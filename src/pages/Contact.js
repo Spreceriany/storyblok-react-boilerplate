@@ -1,8 +1,6 @@
 import { useStoryblok, StoryblokComponent } from "@storyblok/react";
 
-const About = ({ blok }) => {
-  console.log(blok.content);
-
+const Contact = ({ blok }) => {
   return (
     <>
       <div className="min-h-screen">
@@ -12,4 +10,4 @@ const About = ({ blok }) => {
   );
 };
 
-export default About;
+export default Contact;

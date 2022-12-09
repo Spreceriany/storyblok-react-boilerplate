@@ -2,6 +2,7 @@ import { storyblokEditable } from "@storyblok/react";
 import { render } from "storyblok-rich-text-react-renderer";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { NavLink } from "react-router-dom";
 
 const Home = ({ blok }) => {
   console.log(blok);
@@ -29,13 +30,21 @@ const Home = ({ blok }) => {
             </div>
           </div>
         </div>
+        <NavLink
+          to={"/gallery"}
+          className={
+            "flex justify-center px-6 py-4 rounded-full bg-cyan text-primary test-center font-black mt-10 text-cl md:text-2xl max-w-fit transition-all hover:brightness-75 "
+          }
+        >
+          Browse gallery
+        </NavLink>
       </div>
       <div className="h-full flex">
         <LazyLoadImage
-          className=" m-auto hidden md:block h-auto max-h-full w-auto max-w-full ] object-fit "
+          className=" m-auto hidden md:block h-full  max-h-full w-auto max-w-full ] object-contain "
           effect="blur"
-          alt={blok.image?.filename}
-          src={blok.image?.filename}
+          alt={blok.image?.filename + "/m/"}
+          src={blok.image?.filename + "/m/"}
         />
       </div>
     </div>

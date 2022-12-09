@@ -1,5 +1,3 @@
-import { storyblokEditable } from "@storyblok/react";
-import { render } from "storyblok-rich-text-react-renderer";
 import { useStoryblok, StoryblokComponent } from "@storyblok/react";
 
 const Gallery = ({ blok }) => {
@@ -7,7 +5,7 @@ const Gallery = ({ blok }) => {
   document.body.style.overflow = "auto";
   return (
     <>
-      <div className=" pt-20 md:pt-10">
+      <div className=" pt-20 md:pt-10 px-8">
         {blok.images
           .filter((blk) => blk.component === "teaser")
           .map((filteredPerson) => (
@@ -16,7 +14,7 @@ const Gallery = ({ blok }) => {
               key={filteredPerson._uid}
             />
           ))}
-        <div className="px-8 ">
+        <div>
           <div id="photos">
             {blok.images.map((blok) => (
               <StoryblokComponent blok={blok} key={blok._uid} />

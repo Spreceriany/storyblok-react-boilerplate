@@ -1,16 +1,14 @@
 import { useStoryblok, StoryblokComponent } from "@storyblok/react";
 
-export default function MainPage() {
+export default function AboutPage() {
   let slug =
-    window.location.pathname === "/"
-      ? "home"
+    window.location.pathname === "/about"
+      ? "about"
       : window.location.pathname.replace("/", "");
   const story = useStoryblok(slug, { version: "draft" });
   if (!story || !story.content) {
     return;
   }
-
-  console.log(story.content);
 
   return (
     <>
