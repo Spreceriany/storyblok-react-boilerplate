@@ -6,20 +6,10 @@ const Gallery = ({ blok }) => {
   return (
     <>
       <div className=" pt-20 md:pt-10 px-8">
-        {blok.images
-          .filter((blk) => blk.component === "teaser")
-          .map((filteredPerson) => (
-            <StoryblokComponent
-              blok={filteredPerson}
-              key={filteredPerson._uid}
-            />
-          ))}
         <div>
-          <div id="photos">
-            {blok.images.map((blok) => (
-              <StoryblokComponent blok={blok} key={blok._uid} />
-            ))}
-          </div>
+          {blok.images.map((blok) => (
+            <StoryblokComponent blok={blok} key={blok._uid} />
+          ))}
         </div>
       </div>
     </>

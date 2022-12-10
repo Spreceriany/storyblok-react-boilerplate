@@ -17,6 +17,7 @@ import imageCard from "./components/imageCard";
 import twoColumns from "./components/TwoColumns";
 import Contact from "./pages/Contact";
 import Price from "./components/Price";
+import Images from "./components/Images";
 
 storyblokInit({
   accessToken: "4l8TQSdiWVrDyJ78aegKAQtt",
@@ -33,6 +34,7 @@ storyblokInit({
     twoColumns: twoColumns,
     Contact: Contact,
     price: Price,
+    images: Images,
   },
 });
 
