@@ -5,6 +5,8 @@ import Gallery2 from "./pages/Gallery2";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import PricePage from "./pages/PricePage";
+import FaqPage from "./pages/FaqPage";
+import PhilosophyPage from "./pages/PhilosophyPage";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/gallery" element={<Gallery2 />}></Route>
           <Route path="/contact" element={<ContactPage />}></Route>
           <Route path="/price" element={<PricePage />}></Route>
+          <Route path="/faq" element={<FaqPage />}></Route>
+          <Route path="/philosophy" element={<PhilosophyPage />}></Route>
         </Routes>
       </div>
     </>

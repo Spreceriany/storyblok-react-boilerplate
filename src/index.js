@@ -18,6 +18,8 @@ import twoColumns from "./components/TwoColumns";
 import Contact from "./pages/Contact";
 import Price from "./components/Price";
 import Images from "./components/Images";
+import Faq from "./components/Faq";
+import Philosophy from "./components/Philosophy";
 
 storyblokInit({
   accessToken: "4l8TQSdiWVrDyJ78aegKAQtt",
@@ -35,6 +37,8 @@ storyblokInit({
     Contact: Contact,
     price: Price,
     images: Images,
+    Faq: Faq,
+    philosophy: Philosophy,
   },
 });
 
