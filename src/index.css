@@ -106,6 +106,13 @@ body {
   overflow: hidden;
 }
 
+.about .two-column .image {
+  max-height: 600px;
+}
+.contact .two-column .image {
+  max-height: 600px;
+}
+
 
 
 

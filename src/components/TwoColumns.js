@@ -6,7 +6,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const TwoColumns = ({ blok }) => {
   return (
     <div
-      className={`pl-8 pr-8 flex flex-col md:flex-row md:items-center h-screen gap-6 pt-20 md:pt-0 ${
+      className={` two-column pl-8 pr-8 flex flex-col md:flex-row md:items-center h-screen gap-6 pt-20 md:pt-0 ${
         blok.roundImage ? " pr-8 max-w-7xl mx-auto" : " md:pr-0"
       } `}
     >
@@ -22,7 +22,7 @@ const TwoColumns = ({ blok }) => {
         {...storyblokEditable(blok)}
       >
         <LazyLoadImage
-          className={` m-auto block  max-h-full w-auto max-w-full object-fit ${
+          className={` image m-auto block  max-h-full w-auto max-w-full object-fit ${
             blok.roundImage
               ? " rounded-[50%] flex items-center h-1/2"
               : " md:h-full"

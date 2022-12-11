@@ -5,7 +5,7 @@ const About = ({ blok }) => {
 
   return (
     <>
-      <div className="min-h-screen">
+      <div className="min-h-screen about">
         <StoryblokComponent blok={blok.content[0]} />
       </div>
     </>
