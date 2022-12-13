@@ -10,7 +10,14 @@ const TwoColumns = ({ blok }) => {
         blok.roundImage ? " pr-8 max-w-7xl mx-auto" : " md:pr-0"
       } `}
     >
-      <div className="flex flex-col flex-1 flex- md:w-[40%]">
+      <div className="flex contact-bloks flex-col flex-1 flex- md:w-[40%]">
+        <div {...storyblokEditable(blok)} className="grid">
+          {blok.leftColumn.map((blok) => (
+            <StoryblokComponent blok={blok} key={blok._uid} />
+          ))}
+        </div>
+      </div>
+      <div className="contact-wrap hidden  flex-col flex-1 flex- md:w-[40%]">
         <p className="velkyText font-bold mb-4">Need help?</p>
         <p>Need help?</p>
         <p>Don't be shy to reach out!</p>
@@ -38,9 +45,7 @@ const TwoColumns = ({ blok }) => {
         </p>
       </div>
       <div
-        className={`h-full img-wrap flex ${
-          blok.roundImage ? " items-center" : ""
-        } `}
+        className={`h-full flex ${blok.roundImage ? " items-center" : ""} `}
         {...storyblokEditable(blok)}
       >
         <LazyLoadImage

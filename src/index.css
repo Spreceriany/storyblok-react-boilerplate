@@ -118,6 +118,13 @@ body {
   padding-right: 10px;
 }
 
+.contact .two-column .contact-bloks{
+  @apply hidden;
+}
+.contact .two-column .contact-wrap{
+  @apply flex;
+}
+
 
 
 
