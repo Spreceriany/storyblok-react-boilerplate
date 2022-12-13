@@ -26,10 +26,18 @@ export default function NavBar() {
   return (
     <>
       <div
-        className={` font-bold nav md:w-20  flex md:flex-col gap-y-4 w-full z-50  bg-secondary px-4 py-4 text-white  md:transition-all md:hover:w-[50%] md:max-w-[300px] fixed top-0 left-0 right-0   md:min-h-screen md:relative `}
+        className={` font-bold nav md:w-20 items-center md:items-stretch  flex md:flex-col gap-y-4 w-full z-50  bg-secondary px-4 py-4 text-white  md:transition-all md:hover:w-[50%] md:max-w-[300px] fixed top-0 left-0 right-0   md:min-h-screen md:relative `}
       >
+        <a href="/" className=" md:hidden">
+          {" "}
+          <img
+            src={require("../assets/images/logo.png")}
+            className={"w-10 h-10"}
+            alt="logo"
+          />
+        </a>
         <div className=" ml-auto md:hidden">
-          <span onClick={toggleNav}>hy</span>
+          <span onClick={toggleNav}>Menu</span>
         </div>
         <div className="sticky hidden md:flex top-4  md:flex-col gap-y-4">
           <NavLink

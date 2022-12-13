@@ -113,6 +113,11 @@ body {
   max-height: 600px;
 }
 
+.contact .img-wrap{
+  align-items: center; 
+  padding-right: 10px;
+}
+
 
 
 

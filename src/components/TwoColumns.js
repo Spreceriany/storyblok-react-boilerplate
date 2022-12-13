@@ -11,14 +11,36 @@ const TwoColumns = ({ blok }) => {
       } `}
     >
       <div className="flex flex-col flex-1 flex- md:w-[40%]">
-        <div {...storyblokEditable(blok)} className="grid">
-          {blok.leftColumn.map((blok) => (
-            <StoryblokComponent blok={blok} key={blok._uid} />
-          ))}
+        <p className="velkyText font-bold mb-4">Need help?</p>
+        <p>Need help?</p>
+        <p>Don't be shy to reach out!</p>
+        <br />
+        <div className=" font-bold">
+          <span> Monday - Friday</span>
+          <span className=" ml-8 md:ml-20"> 8am to 5pm CET</span>
         </div>
+        <div className=" font-bold">
+          <span> Saturday</span>
+          <span className=" ml-[5.75rem] md:ml-[8.75rem]"> 8am to 2pm CET</span>
+        </div>
+        <br />
+        (Although I am trying to be here 24/7)
+        <p>
+          For more inquiry{" "}
+          <a
+            href="mailto:service@adjutor.world"
+            className="cyan"
+            target="_blank"
+          >
+            {" "}
+            service@adjutor.world
+          </a>
+        </p>
       </div>
       <div
-        className={`h-full flex ${blok.roundImage ? " items-center" : ""} `}
+        className={`h-full img-wrap flex ${
+          blok.roundImage ? " items-center" : ""
+        } `}
         {...storyblokEditable(blok)}
       >
         <LazyLoadImage
