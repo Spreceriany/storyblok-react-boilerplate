@@ -1,6 +1,6 @@
 import { StoryblokComponent, storyblokEditable } from "@storyblok/react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 const Images = ({ blok }) => {
   console.log(blok);
   return (
@@ -13,7 +13,7 @@ const Images = ({ blok }) => {
         {blok.images.map((image) => {
           return (
             <LazyLoadImage
-              effect="blur"
+              effect="opacity"
               alt={image.filename + "/m/"}
               src={image.filename + "/m/"} // use normal <img> attributes as props
             />
