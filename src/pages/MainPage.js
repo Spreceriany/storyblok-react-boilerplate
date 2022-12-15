@@ -10,8 +10,6 @@ export default function MainPage() {
     return;
   }
 
-  console.log(story.content);
-
   return (
     <>
       <div className="w-full">

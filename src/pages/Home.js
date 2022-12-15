@@ -5,7 +5,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { NavLink } from "react-router-dom";
 
 const Home = ({ blok }) => {
-  console.log(blok);
   return (
     <div className="pl-8 flex items-center h-screen gap-6 ">
       <div className="flex flex-col flex-1 flex- w-[40%]">
