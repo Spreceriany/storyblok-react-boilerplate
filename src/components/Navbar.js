@@ -66,7 +66,7 @@ export default function NavBar() {
               Home
             </div>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to={"/about"}
             className={({ isActive }) =>
               isActive
@@ -117,7 +117,7 @@ export default function NavBar() {
             <div className=" overflow-hidden  top-1/2 -translate-y-1/2  md:opacity-0 link text-3xl absolute left-12  ">
               Contact
             </div>
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to={"/gallery"}
             className={({ isActive }) =>
@@ -144,7 +144,7 @@ export default function NavBar() {
               Gallery
             </div>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to={"/philosophy"}
             className={({ isActive }) =>
               isActive
@@ -195,7 +195,7 @@ export default function NavBar() {
             <div className=" overflow-hidden  top-1/2 -translate-y-1/2  md:opacity-0 link text-3xl absolute left-12  ">
               FAQ
             </div>
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
 
@@ -234,7 +234,7 @@ export default function NavBar() {
               Home
             </div>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to={"/about"}
             className={({ isActive }) =>
               isActive
@@ -285,7 +285,7 @@ export default function NavBar() {
             <div className=" overflow-hidden  top-1/2 -translate-y-1/2  md:opacity-0 link text-2xl absolute left-12  ">
               Contact
             </div>
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to={"/gallery"}
             className={({ isActive }) =>
@@ -312,7 +312,7 @@ export default function NavBar() {
               Gallery
             </div>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to={"/philosophy"}
             className={({ isActive }) =>
               isActive
@@ -363,7 +363,7 @@ export default function NavBar() {
             <div className=" overflow-hidden  top-1/2 -translate-y-1/2  md:opacity-0 link text-2xl absolute left-12  ">
               FAQ
             </div>
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
     </>

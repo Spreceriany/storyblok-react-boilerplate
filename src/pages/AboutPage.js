@@ -1,4 +1,8 @@
-import { useStoryblok, StoryblokComponent } from "@storyblok/react";
+import {
+  useStoryblok,
+  getStoryblokApi,
+  StoryblokComponent,
+} from "@storyblok/react";
 
 export default function AboutPage() {
   let slug =

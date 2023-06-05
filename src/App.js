@@ -7,6 +7,7 @@ import ContactPage from "./pages/ContactPage";
 import PricePage from "./pages/PricePage";
 import FaqPage from "./pages/FaqPage";
 import PhilosophyPage from "./pages/PhilosophyPage";
+import BlogPage from "./pages/BlogPage";
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<MainPage className="w-full" />}></Route>
-          <Route path="/about" element={<AboutPage />}></Route>
+          {/* <Route path="/about" element={<AboutPage />}></Route> */}
           <Route path="/gallery" element={<Gallery2 />}></Route>
-          <Route path="/contact" element={<ContactPage />}></Route>
-          <Route path="/price" element={<PricePage />}></Route>
+          {/* <Route path="/contact" element={<ContactPage />}></Route> */}
+          {/* <Route path="/price" element={<PricePage />}></Route>
           <Route path="/faq" element={<FaqPage />}></Route>
           <Route path="/philosophy" element={<PhilosophyPage />}></Route>
+          <Route exact path="/blogs" element={<BlogPage />}></Route> */}
         </Routes>
       </div>
     </>

@@ -20,6 +20,8 @@ import Price from "./components/Price";
 import Images from "./components/Images";
 import Faq from "./components/Faq";
 import Philosophy from "./components/Philosophy";
+import Prompt from "./components/Prompt";
+import BlogPage from "./pages/BlogPage";
 
 storyblokInit({
   accessToken: "4l8TQSdiWVrDyJ78aegKAQtt",
@@ -39,6 +41,8 @@ storyblokInit({
     images: Images,
     Faq: Faq,
     philosophy: Philosophy,
+    prompt: Prompt,
+    blogs: BlogPage,
   },
 });
 
