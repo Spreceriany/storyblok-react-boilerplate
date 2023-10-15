@@ -13,8 +13,8 @@ const Images = ({ blok }) => {
         {blok.images.map((image) => {
           return (
             <img
-              alt={blok.image?.filename + "/m/"}
-              src={blok.image?.filename + "/m/"}
+              alt={image.filename + "/m/"}
+              src={image.filename + "/m/"}
               loading="lazy"
             />
             // <LazyLoadImage
