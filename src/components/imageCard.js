@@ -9,11 +9,7 @@ export default function imageCard({ blok }) {
       className="column feature img relative  hover:md:scale-125  hover:z-40 transition-all"
     >
 
-           <img
-              alt={image.filename + "/m/"}
-              src={image.filename + "/m/"}
-              loading="lazy"
-            />
+      
     {/* <LazyLoadImage
         effect="blur"
         alt={blok.image?.filename + "/m/"}
