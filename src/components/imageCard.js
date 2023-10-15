@@ -10,8 +10,8 @@ export default function imageCard({ blok }) {
     >
 
            <img
-              alt={image?.filename + "/m/"}
-              src={image?.filename + "/m/"}
+              alt={image.filename + "/m/"}
+              src={image.filename + "/m/"}
               loading="lazy"
             />
     {/* <LazyLoadImage
