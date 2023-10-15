@@ -8,11 +8,17 @@ export default function imageCard({ blok }) {
       {...storyblokEditable(blok)}
       className="column feature img relative  hover:md:scale-125  hover:z-40 transition-all"
     >
-      <LazyLoadImage
+
+           <img
+        alt={blok.image?.filename + "/m/"}
+        src={blok.image?.filename + "/m/"}
+        loading="lazy"
+      />
+    {/* <LazyLoadImage
         effect="blur"
         alt={blok.image?.filename + "/m/"}
         src={blok.image?.filename + "/m/"} // use normal <img> attributes as props
-      />
+      /> */}
       <p className=" transition-all duration-200 absolute translate-y-2 bottom-4 left-4 text-2xl md:text-4xl font-bold opacity-0 title-card z-10 ">
         {" "}
         {blok.title}
