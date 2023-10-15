@@ -12,11 +12,16 @@ const Images = ({ blok }) => {
       <div id="photos">
         {blok.images.map((image) => {
           return (
-            <LazyLoadImage
-              effect="opacity"
-              alt={image.filename + "/m/"}
-              src={image.filename + "/m/"} // use normal <img> attributes as props
-            />
+         <img
+        alt={blok.image?.filename + "/m/"}
+        src={blok.image?.filename + "/m/"}
+        loading="lazy"
+      />
+      {/* <LazyLoadImage
+        effect="blur"
+        alt={blok.image?.filename + "/m/"}
+        src={blok.image?.filename + "/m/"} // use normal <img> attributes as props
+      /> */}
           );
         })}
       </div>
